@@ -10,4 +10,12 @@ async function postData(url, body) {
     return await res.json();
 }
 
-export default postData;
+async function getData(url) {
+    const res = await fetch(url, {
+        method: 'Get',
+    });
+    
+    return await res.json();
+}
+
+export {postData, getData};

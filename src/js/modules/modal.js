@@ -1,3 +1,4 @@
+import clearInput from './clearInput';
 function modal() {
 
     let modalBtnClick = false;
@@ -46,6 +47,7 @@ function modal() {
                 item.classList.add('animated', 'fadeIn');
                 item.style.display = 'none';
                 document.body.style.overflow = '';
+                clearInput();
             });
         }
 
